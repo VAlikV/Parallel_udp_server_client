@@ -5,7 +5,6 @@
 int main()
 {
     int a;
-    double b = 5;
 
     server::UDPServer server("127.0.0.1", 8084, "127.0.0.1", 8081);
 
@@ -14,7 +13,7 @@ int main()
     while(1)
     {
         std::cin >> a; 
-        server.setMsg(b);
+        server.setMsg();
     }
 
     server.stop();
